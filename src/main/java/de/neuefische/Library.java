@@ -15,7 +15,7 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        // check, if book already exists in library
+        // check if book already exists in library
         boolean found = false;
         for (Book b : books) {
             if (b.equals(book)) {
@@ -32,12 +32,12 @@ public class Library {
             newBooks[books.length] = book;
             books = newBooks;
         } else {
-            System.out.println("This book exists already in the library.");
+            System.out.println("This book is already in the library.");
         }
     }
 
     public void deleteBook(Book book) {
-        // check, if book exists in library
+        // check if book exists in library
         boolean found = false;
         for (Book b : books) {
             if (b.equals(book)) {
@@ -60,4 +60,6 @@ public class Library {
             System.out.println("Book not found in the library.");
         }
     }
+
+
 }
